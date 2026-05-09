@@ -19,6 +19,13 @@ export default function PokedexLayout() {
     >
       <Stack.Screen name="index" options={{ title: "Pokedex" }} />
       <Stack.Screen name="pokemon/[id]" options={{ title: "Pokemon Details" }} />
+      <Stack.Screen
+        name="pokemon/[id]/insights"
+        options={{
+          headerShown: false,
+          presentation: "formSheet",
+        }}
+      />
     </Stack>
   );
 }
