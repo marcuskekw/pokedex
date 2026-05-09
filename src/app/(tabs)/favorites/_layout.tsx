@@ -6,7 +6,7 @@ export default function FavoritesLayout() {
       screenOptions={{
         headerShadowVisible: false,
         headerStyle: {
-          backgroundColor: "#F97316",
+          backgroundColor: "#E3350D",
         },
         headerTintColor: "#FFFFFF",
         headerTitleStyle: {
