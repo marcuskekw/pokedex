@@ -1,6 +1,9 @@
+import { useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
 
-export default function Index() {
+export default function PokemonDetails() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+
   return (
     <View
       style={{
@@ -9,7 +12,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Hello World</Text>
+      <Text>Pokemon Details: {id}</Text>
     </View>
   );
 }

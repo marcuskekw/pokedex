@@ -1,0 +1,24 @@
+import { Stack } from "expo-router";
+
+export default function PokedexLayout() {
+  return (
+    <Stack
+      screenOptions={{
+        headerBackTitle: "Back",
+        headerShadowVisible: false,
+        headerStyle: {
+          backgroundColor: "#F97316",
+        },
+        headerTintColor: "#FFFFFF",
+        headerTitleStyle: {
+          color: "#FFFFFF",
+          fontSize: 20,
+          fontWeight: "800",
+        },
+      }}
+    >
+      <Stack.Screen name="index" options={{ title: "Pokedex" }} />
+      <Stack.Screen name="pokemon/[id]" options={{ title: "Pokemon Details" }} />
+    </Stack>
+  );
+}
